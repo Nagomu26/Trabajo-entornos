@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="icon" type="image/svg" href="images/airplane-fill.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand text-white" href="index.html">
+        <i class="bi bi-airplane-fill"></i> Destinos del mundo
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav-item price">
+            <a class="nav-link text-white" href="contacto.html">Contactos</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-warning btn-sm text-dark fw-bold px-3" href="#">📅 Reservar ahora</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <setion class="texto_principal">
+    <div class="bg-warning">
+      <p class="fs-1 text-center bg-warning p-4 pb-1 fw-bold">Nuestros destinos</p>
+      <p class="fs-5 text-center bg-warning  p-4 pt-1 encuentra">Encuentra tu proximo destino</p>
+    </div>
+  </setion>
+  <!-- Formularios -->
+  <section class="formularios m-3 pt-5 ">
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>Todos</option>
+            <option value="1">Francia</option>
+            <option value="2">Italia</option>
+            <option value="3">Peru</option>
+            <option value="4">Estados Unidoa</option>
+            <option value="5">Londres</option>
+            <option value="6">Marruecos</option>
+
+          </select>
+          <label for="floatingSelectGrid">Tipo de destino</label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>Todos</option>
+            <option value="1">Asia</option>
+            <option value="2">Africa</option>
+            <option value="3">Europa</option>
+            <option value="4">America</option>
+            <option value="5">Oceania</option>
+          </select>
+          <label for="floatingSelectGrid">Continente</label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+            <option selected>Sin limite</option>
+            <option value="1">1000$</option>
+            <option value="2">500$</option>
+            <option value="3">300$</option>
+            <option value="4">100$</option>
+
+
+          </select>
+          <label for="floatingSelectGrid">Precio Maximo</label>
+        </div>
+      </div>
+      <div class="col-md text-center d-flex">
+        <button type="button" class="btn btn-warning btn-lg px-5 pt-2 pb-3 align-middle ms-4"><a class="nav-link"
+            href="#">🔎Buscar ahora</a></button>
+      </div>
+    </div>
+  </section>
+  <section class="tabla pt-5 pb-5">
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Destino</th>
+        <th>Duración</th>
+        <th>Alojamiento</th>
+        <th>Vuelo</th>
+        <th>Comidas</th>
+        <th>Precio</th>
+        <th>Acción</th>
+      </tr>
+      <tr>
+        <td>Paris, Francia <span class="badge bg-danger">Oferta</span></td>
+        <td>7 días</td>
+        <td>✔ Hotel 4★</td>
+        <td>✔ Incluido</td>
+        <td>Desayuno</td>
+        <td class="bg-warning">840€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Phuket, Tailandia</td>
+        <td>10 días</td>
+        <td>✔ Resort 5★</td>
+        <td>✔ Incluido</td>
+        <td>Media pensión</td>
+        <td class="bg-warning">950€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+      </tr>
+      <tr>
+        <td>Reikiavik, Islandia <span class="badge bg-danger">Oferta</span></td>
+        <td>5 días</td>
+        <td>✔ Hotel 3★</td>
+        <td>✔ Incluido</td>
+        <td>Solo alojamiento</td>
+        <td class="bg-warning">1450€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Tokio, Japón <span class="badge bg-success">Popular</span></td>
+        <td>12 días</td>
+        <td>✔ Hotel 4★</td>
+        <td>✔ Incluido</td>
+        <td>Desayuno</td>
+        <td class="bg-warning">1650€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Maldivas <span class="badge bg-warning">Premium</span></td>
+        <td>8 días</td>
+        <td>✔ Villa 5★</td>
+        <td>✔ Business Class</td>
+        <td>Todo incluido</td>
+        <td class="bg-warning">2000€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Machu Picchu, Perú</td>
+        <td>9 días</td>
+        <td>✔ Hotel 3★</td>
+        <td>✔ Incluido</td>
+        <td>Desayuno</td>
+        <td class="bg-warning">1100€</td>
+        <td><button type="button" class="btn btn-warning btn-sm"><a class="nav-link" href="#">Reservar </a></button>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-2 col-lg-4">
+          <h5><i class="bi bi-airplane-fill"></i> Destinos del mundo</h5>
+          <p>Tu agencia de confianza para vivir experiencias increibles alrededor del mundo</p>
+          <div class="d-flex gap-3">
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-instagram"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-tiktok"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-youtube"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-facebook"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-lg-4">
+          <h5> Enlaces rapidos</h5>
+          <p><a href="index.html" class="text-decoration-none text-white">Inicio</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Destino</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Contacto</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Sobre nosotros</a></p>
+
+
+
+        </div>
+        <div class="col-md-3 col-lg-4 ">
+          <h5> Contacto</h5>
+          <p>Calle False 123, Cuenca.</p>
+          <p>+34 653423232</p>
+          <p>minegocio@gmail.com</p>
+          <p>Lue-Vie 9:00 - 12:00</p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </footer>
+</body>
+
+</html>

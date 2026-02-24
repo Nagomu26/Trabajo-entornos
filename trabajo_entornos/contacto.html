@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="icon" type="image/svg" href="images/airplane-fill.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand text-white" href="index.html">
+        <i class="bi bi-airplane-fill"></i> Destinos del mundo
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="destinos.html">Destinos</a>
+          </li>
+          <li class="nav-item price">
+            <a class="nav-link text-white" href="contacto.html">Contactos</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-warning btn-sm text-dark fw-bold px-3" href="#">📅 Reservar ahora</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <setion class="texto_principal mb-4">
+    <div class="bg-warning">
+      <p class="fs-1 text-center bg-warning p-4 pb-1 fw-bold">Contacta con nosotros</p>
+      <p class="fs-5 text-center bg-warning  p-4 pt-1 encuentra">Estamos aqui para ayudarte a planear tu viaje perfecto
+      </p>
+    </div>
+  </setion>
+  <!-- Formulario e información -->
+  <section class="form container-fluid container">
+    <div class="row gx-5 mb-5">
+      <div class="formularios p-4 col-6">
+        <h4>Envianos un mensaje</h4>
+        <form>
+
+          <div class="row p-2">
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1" class="form-label">Nombre Completo *</label>
+              <input type="text " class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            </div>
+          </div>
+
+          <div class="row mt-3 p-2">
+            <div class="col-12 col-md-6">
+              <label for="exampleInputEmail1" class="form-label">Telefono</label>
+              <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="col-12 col-md-6">
+            <label for="selectDestino" class="form-label">Destino de interés</label>
+            <select class="form-select" id="selectDestino">
+              <option selected disabled value="">Selecciona un destino...</option>
+              <option value="paris">París, Francia</option>
+              <option value="phuket">Londres, Inglaterra</option>
+              <option value="tokio">Tokio, Japon</option>
+              <option value="maldivas">Maldivas,</option>
+              <option value="machu">Machu Picchu, Perú</option>
+            </select>
+          </div>
+          </div>
+          <div class="mb-3 p-2">
+            <label for="exampleInputEmail1" class="form-label">Numero de personas *</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+           <div class="mb-3 p-2">
+            <label for="exampleInputEmail1" class="form-label">Fecha del viaje *</label>
+            <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-floating p-2 mb-2">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+          <div class="mb-4 form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label ml-4" for="exampleCheck1">Acepto la <a href="">politica de privacidad</a> y
+              los <a href="">terminos y condiciones</a></label>
+          </div>
+          <button type="submit" class="btn btn-warning p-2"><i class="bi bi-send"></i> Enviar</button>
+        </form>
+        <div class="social bg-warning pb-2">
+          <div class="d-flex justify-content-center mt-5 ">
+            <div class="p-2  ">
+              <!-- Con fs-2 hago mas grande el icono -->
+              <h3>Siguenos en redes sociales</h3>
+
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-center ">
+            <div class="px-2">
+              <a href="" class="text-decoration-none text-danger px-2"><i class="bi bi-instagram fs-2"></i></a>
+              <a href="" class="text-decoration-none text-black px-2"><i class="bi bi-tiktok fs-2"></i></a>
+              <a href="" class="text-decoration-none text-danger px-2"><i class="bi bi-youtube fs-2"></i></a>
+              <a href="" class="text-decoration-none text-blue px-2"><i class="bi bi-facebook fs-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="informacion p-4 col-6">
+        <h4 class="mb-3">Contacta con nosotros</h4>
+
+        <div class="mb-3">
+
+          <h5> <span class="badge bg-warning"><i class="bi bi-geo-alt-fill"></i> </span> Dirección</h5>
+          <p class="ms-3">Calle False 432</p>
+          <p class="ms-3">54545 Madrid, España.</p>
+        </div>
+
+        <div class="mb-3">
+          <h5> <span class="badge bg-warning"><i class="bi bi-telephone-fill"></i> </span> Teléfono</h5>
+          <p class="ms-3">+34 654534343</p>
+          <p class="ms-3">+34 653345345</p>
+        </div>
+
+        <div class="mb-3">
+          <h5> <span class="badge bg-warning"><i class="bi bi-envelope-fill"></i> </span> Email</h5>
+          <p class="ms-3">cuentadeempresa@gmail.com</p>
+          <p class="ms-3">segundacuenta@gmail.com</p>
+        </div>
+
+        <div class="mb-3">
+          <h5> <span class="badge bg-warning"><i class="bi bi-envelope-fill"></i> </span> Horario</h5>
+          <p class="ms-3">Lunes - Viernes 9:00-22:00</p>
+          <p class="ms-3">Sabado 9:00-14:00</p>
+          <p class="ms-3">Domingo Cerrado</p>
+        </div>
+        <div class="mb-3">
+          <div class="row w-100">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12161.52573334329!2d-3.8269756067994165!3d40.356065985409856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd41893c8995f42d%3A0x6ceab2cbc290bdad!2sIES%20%C3%8Dtaca!5e0!3m2!1ses!2ses!4v1771610672453!5m2!1ses!2ses"
+              width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+      <div class="row text-center text-md-start">
+        <div class="col-md-2 col-lg-4">
+          <h5><i class="bi bi-airplane-fill"></i> Destinos del mundo</h5>
+          <p>Tu agencia de confianza para vivir experiencias increibles alrededor del mundo</p>
+          <div class="d-flex gap-3">
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-instagram"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-tiktok"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-youtube"></i></a>
+            <a href="" class="text-decoration-none text-white"><i class="bi bi-facebook"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-lg-4">
+          <h5> Enlaces rapidos</h5>
+          <p><a href="index.html" class="text-decoration-none text-white">Inicio</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Destino</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Contacto</a></p>
+          <p><a href="index.html" class="text-decoration-none text-white">Sobre nosotros</a></p>
+
+
+
+        </div>
+        <div class="col-md-3 col-lg-4 ">
+          <h5> Contacto</h5>
+          <p>Calle False 123, Cuenca.</p>
+          <p>+34 653423232</p>
+          <p>minegocio@gmail.com</p>
+          <p>Lue-Vie 9:00 - 12:00</p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+  </footer>
+</body>
+
+</html>
